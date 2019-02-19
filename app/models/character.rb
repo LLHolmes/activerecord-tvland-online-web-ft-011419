@@ -10,8 +10,8 @@ class Character < ActiveRecord::Base
     Show.new(arg)
   end
   
-  def build_show(arg)
-    Show.new(arg)
+  def build_network(arg)
+    Network.new(arg)
   end
   
 end

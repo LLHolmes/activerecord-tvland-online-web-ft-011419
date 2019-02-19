@@ -7,11 +7,11 @@ class Character < ActiveRecord::Base
   end
   
   def build_show(arg)
-    Show.new(arg)
+    Show.find_or_create_by(arg)
   end
   
   def build_network(arg)
-    Network.new(arg)
+    Network.find_or_create_by(arg)
   end
   
 end
